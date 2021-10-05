@@ -1,0 +1,33 @@
+body{
+    background-color: antiquewhite;
+}
+
+.navbar {
+    left: 0;
+    right: 0;
+    background: rgb(183, 247, 240) !important;
+    position: fixed !important;
+}
+
+.marg {
+    margin-top: 12vh;
+    margin-bottom: 6vh;
+}
+
+.marg2 {
+    margin-top: 2vh;
+}
+
+.whitecol {
+    color: black;
+    text-align: center;
+}
+
+.boxsha {
+    box-shadow: -2px -2px 4px grey, -2px -2px 10px grey;
+    text-align: center;
+}
+
+.buttons{
+    margin-top: 50px;
+}
