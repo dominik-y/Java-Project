@@ -2,7 +2,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">Select row</th>
+            <th scope="col">Register</th>
             <th scope="col">Event</th>
             <th scope="col">Date</th>
             <th scope="col">Venue</th>
@@ -49,3 +49,8 @@
 
     </tbody>
 </table>
+<div class="buttons">
+<button type="button" class="btn btn-lg btn-secondary">Add</button>
+<button type="button" class="btn btn-lg btn-secondary">Update</button>
+<button type="button" class="btn btn-lg btn-secondary">Delete</button>
+</div>

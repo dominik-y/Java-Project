@@ -8,10 +8,10 @@
                 <a class="nav-link" href="login.php">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="login.php">Events</a>
+                <a class="nav-link" href="registrations.php">Registrations</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php">Registrations</a>
+                <a class="nav-link" href="events.php">Events</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="manager.php">Manager</a>

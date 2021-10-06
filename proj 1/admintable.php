@@ -49,3 +49,8 @@
 
     </tbody>
 </table>
+<div class="buttons">
+<button type="button" class="btn btn-lg btn-secondary">Edit</button>
+<button type="button" class="btn btn-lg btn-secondary">Save</button>
+<button type="button" class="btn btn-lg btn-secondary">Delete</button>
+</div>

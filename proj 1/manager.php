@@ -17,11 +17,11 @@
                 <?php include 'header.php'; ?>
                 <div class="page-header marg">
                     <h1 class="whitecol">
-                        Manager registrations table
+                        Manager events table
                     </h1>
                 </div>
                 <div class="jumbotron card-block marg2 boxsha">
-                    <?php include 'table.php'; ?>
+                    <?php include 'managertable.php'; ?>
                 </div>
             </div>
         </div>
