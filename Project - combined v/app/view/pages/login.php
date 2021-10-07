@@ -15,11 +15,18 @@
     <div class="wrapper fadeInDown">
         <div id="formContent">
 
-            <form>
-                <input type="text" id="username" class="fadeIn second" name="username" placeholder="username">
-                <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                <input type="submit" class="fadeIn fourth" value="Log In">
-            </form>
+        <form method="POST" action="index.php?page=user&method=isAuthenticated">
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="upassword"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="upassword" required>
+
+            <button type="submit">Log In</button>
+        </div>
+    </form>
 
         </div>
     </div>
