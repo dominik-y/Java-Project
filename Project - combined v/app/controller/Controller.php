@@ -19,7 +19,7 @@ class Controller {
 
         $data = NULL;
         if ($page == NULL) {
-            $view = new View('app/view/pages/welcome.php');
+            $view = new View('app/view/pages/login.php');
         } else {
             $view = new View('app/view/pages/' . $page . '.php');
             $model = new $page(); //For example: Person model

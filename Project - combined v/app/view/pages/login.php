@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <?php include 'header.php'; ?>
     <div class="wrapper fadeInDown">
         <div id="formContent">
 

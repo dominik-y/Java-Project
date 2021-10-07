@@ -28,11 +28,11 @@ class Autoloader {
 
             // Define an array of directories in the order of their priority to iterate through.
             $dirs = array(
-                'controller/',
-                'config/',
-                'model/',
-                'view/',
-                'db/'
+                'app/controller/',
+                'app/filter/',
+                'app/model/',
+                'app/view/',
+                'app/db/'
             );
 
             // Loop through each directory to load all the class files. It will only require a file once.
