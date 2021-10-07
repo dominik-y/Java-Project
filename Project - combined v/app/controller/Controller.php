@@ -35,7 +35,7 @@ class Controller {
             $param1 = filter_has_var(INPUT_POST, 'uname') ? filter_input(INPUT_POST, 'uname', FILTER_SANITIZE_STRING) : NULL;
             $param2 = filter_has_var(INPUT_POST, 'upassword') ? filter_input(INPUT_POST, 'upassword', FILTER_SANITIZE_STRING) : NULL;
 
-            $user = new User();
+            $user = new Login();
             if ($user->isAuthenticated($param1, $param2)) {
                 $_SESSION['loggedIn'] = true;
                 $_SESSION['urole'] = $user->urole;
