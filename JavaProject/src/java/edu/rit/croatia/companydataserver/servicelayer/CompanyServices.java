@@ -135,18 +135,30 @@ public class CompanyServices {
     }
     
     
-    
-    
-   /*   
+    @PUT
     @Path("department")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response updateDepartment(String json)
+    {
+        return Response.ok(company.updateDepartment(json)).build();
+    }//getDepartments method end
+    
+   
+    @Path("employee")
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateDepartment(@QueryParam("company") String companyName, 
-                                   @QueryParam("dept_name") String deptName, 
-                                   @QueryParam("dept_no")   String deptNumb, 
-                                   @QueryParam("location")  String location) {
-        return Response.ok(company.updateDepartment (companyName, deptName, deptNumb, location)).build();
+    public Response updateEmployee(String json) {
+        return Response.ok(company.updateEmployees(json)).build();
     }
+    
+    @Path("timecard")
+    @PUT
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response updateTimecard(String json) {
+        return Response.ok(company.updateTimecard(json)).build();
+    }
+    /*   
+   
 
     @Path("employee")
     @PUT

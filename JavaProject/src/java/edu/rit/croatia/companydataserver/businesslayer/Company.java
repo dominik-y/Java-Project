@@ -13,6 +13,7 @@ import java.util.Calendar;
 
 import java.util.List;
 import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -173,34 +174,59 @@ public class Company {
         return gson.toJson(employee);
     }
 
-    /*
-     
-   
     
-    public String updateDepartment(String companyName, String departmentName, String departmentNumber, String location) {
-        Department department = new Department(companyName, departmentName, departmentNumber, location);
-        Department _d = dl.updateDepartment(department);
+    @PUT
+    @Path("department")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String updateDepartment(String json) {
+        Department department = gson.fromJson(json, Department.class);
+        department = dl.updateDepartment(department);
+        if (department == null) {
+            return "{\"error:\": \"No department for company...\"}";
+        }
+        if (department.getId() > 0) {
+            System.out.println("updated id: " + department.getId());
+        } else {
+            System.out.println("Not updated");
+        }
         return gson.toJson(department);
-    }
+    }//updateDepartment end
+    
 
     
-    public String updateTimecard() {
-        Timecard timecards = new Timecard();
-        Timecard t = dl.updateTimecard();
-        return gson.toJson();
+    public String updateTimecard(String json) {
+        Timecard timecards = gson.fromJson(json, Timecard.class);
+        timecards = dl.updateTimecard(timecards);
+        if (timecards == null) {
+            return "{\"error:\": \"No department for company...\"}";
+        }
+        if (timecards.getId() > 0) {
+            System.out.println("updated id: " + timecards.getId());
+        } else {
+            System.out.println("Not updated");
+        }
+        return gson.toJson(timecards);
     }
 
     // EMPLOYEES
     
     
 
-     public String updateEmployees() {
-        Employee employee = new Employee();
-        Employee e = dl.Employees();
+     public String updateEmployees(String json) {
+        Employee employee = gson.fromJson(json, Employee.class);
+        employee = dl.updateEmployee(employee);
+        if (employee == null) {
+            return "{\"error:\": \"No department for company...\"}";
+        }
+        if (employee.getId() > 0) {
+            System.out.println("updated id: " + employee.getId());
+        } else {
+            System.out.println("Not updated");
+        }
         return gson.toJson(employee);
     }
     
     
     
-     */
+     
 }
